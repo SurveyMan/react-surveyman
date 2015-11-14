@@ -24,6 +24,7 @@ var Application = React.createClass({
   },
   handleLoadSurvey() {
     // TODO(etosch): loadSurvey should take an argument?
+    console.log("in Application.handleLoadSurvey");
     SurveyActions.loadSurvey(SurveyMan.new_survey().toJSON());
   },
   handleDeleteSurvey() {

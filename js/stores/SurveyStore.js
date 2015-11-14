@@ -242,6 +242,8 @@ var SurveyStore = Reflux.createStore({
    * @param rawData survey data in json
    */
   onLoadSurvey(rawData) {
+    console.log("in SurveyStore.onLoadSurvey");
+    console.log(rawData);
     console.assert(rawData !== undefined, 'survey json data should be defined');
     // update the survey object
     var data = new Survey(rawData);

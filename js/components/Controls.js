@@ -20,8 +20,10 @@ var Controls = React.createClass({
       alert("Please enter a title");
     }
   },
-  handleLoad() {
-    SurveyActions.toggleLoadModal();
+  handleLoad(arg) {
+    console.log("in Controls.handleLoad");
+    console.log(arg);
+    SurveyActions.toggleLoadModal(arg);
   },
   handleClear() {
     var choice = confirm("This will clear the survey and start a new one. " +

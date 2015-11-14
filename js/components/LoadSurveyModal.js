@@ -18,7 +18,7 @@ var BaseModal = React.createClass({
         var reader = new FileReader();
         reader.onload = (evt) => {
             try {
-                var { survey } = JSON.parse(evt.target.result);
+                var survey = JSON.parse(evt.target.result);
                 SurveyActions.loadSurvey(survey);
                 SurveyActions.toggleLoadModal();
             } catch (err) {
