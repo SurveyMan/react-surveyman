@@ -39,6 +39,7 @@ var Controls = React.createClass({
     SurveyStore.updateSurveyData(newSurvey, false);
   },
   handleStaticAnalysis() {
+    SurveyActions.toggleStaticAnalysisModal();
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = () => console.log(xhttp.responseText);
     xhttp.open("POST", "http://codemonkey.cs.umass.edu:1234/analyze", false);

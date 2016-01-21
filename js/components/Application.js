@@ -11,6 +11,7 @@ var SurveyActions = require('../actions/SurveyActions');
 var SurveyStore = require('../stores/SurveyStore');
 var TreeView = require('./TreeView');
 var LoadSurveyModal = require('./LoadSurveyModal');
+var StaticAnalysisModal = require('./StaticAnalysisModal');
 var SurveyMan = require('../sub/surveyman.js/SurveyMan/surveyman');
 
 var Application = React.createClass({
@@ -34,6 +35,7 @@ var Application = React.createClass({
         alertState,
         surveyData,
         loadSurveyModalState,
+        staticAnalysisModalState,
         savedSurveys,
         optionGroupState } = this.state;
 
@@ -45,6 +47,9 @@ var Application = React.createClass({
           <LoadSurveyModal
               isOpen={loadSurveyModalState}
               savedSurveys={savedSurveys} />
+          <StaticAnalysisModal
+            isOpen={staticAnalysisModalState}
+            />
           <AlertBox
               msg={alertState.get('msg')}
               level={alertState.get('level')}

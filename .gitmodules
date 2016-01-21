@@ -2,3 +2,6 @@
 	path = js/sub/surveyman.js
 	url = git@github.com:SurveyMan/surveyman.js.git
 	branch = gh-pages
+[submodule "SurveyMan"]
+	path = SurveyMan
+	url = git@github.com:SurveyMan/SurveyMan

@@ -1,4 +1,4 @@
-var React = require('react');
+ var React = require('react');
 var Modal = require('react-bootstrap').Modal;
 var Button = require('react-bootstrap').Button;
 var OverlayMixin = require('react-bootstrap').OverlayMixin;

@@ -27,6 +27,7 @@ var SurveyStore = Reflux.createStore({
       isOpen: false
     }),
     loadSurveyModalState: false,
+    staticAnalysisModalState: false,
     savedSurveys: [],
     alertState: Immutable.Map({
       msg: '',
